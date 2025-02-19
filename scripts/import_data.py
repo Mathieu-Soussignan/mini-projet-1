@@ -1,11 +1,10 @@
 import pandas as pd
 from faker import Faker
 from sqlalchemy.orm import Session
-from models.utilisateur_model import Utilisateur
-from models.transaction_model import Transaction
-from models.charge_model import Charge
+from models.patient_model import Patient
 from models.sex_model import Sex
 from models.region_model import Region
+from models.smoker_model import Smoker
 from modules.database import SessionLocal, init_db
 
 fake = Faker('fr_FR')
@@ -21,9 +20,9 @@ def import_insurance_csv(csv_path: str):
     for index, row in df.iterrows():
         # 1. Gestion du Sexe
         sex_value = row['sex']
-        sex_obj = db.query(Sex).filter(Sex.type == sex_value).first()
+        sex_obj = db.query(Sex).filter(Sex.sex_label == sex_value).first()
         if not sex_obj:
-            sex_obj = Sex(type=sex_value)
+            sex_obj = Sex(sex_label=sex_value)
             db.add(sex_obj)
             db.commit()
             db.refresh(sex_obj)
@@ -37,39 +36,38 @@ def import_insurance_csv(csv_path: str):
             db.commit()
             db.refresh(region_obj)
         
-        # 3. Génération de user_name via Faker
+        # 3. Gestion du statut fumeur (Smoker)
+        smoker_value = row['smoker']
+        smoker_obj = db.query(Smoker).filter(Smoker.is_smoker == smoker_value).first()
+        if not smoker_obj:
+            smoker_obj = Smoker(is_smoker=smoker_value)
+            db.add(smoker_obj)
+            db.commit()
+            db.refresh(smoker_obj)
+
+        # 4. Génération de nom et prénom via Faker
         first_name = fake.first_name()
         last_name = fake.last_name()
-        user_name = f"{first_name} {last_name}"
         
-        # 4. Création d'un enregistrement Utilisateur (Patient)
-        utilisateur = Utilisateur(
-            user_name=user_name,
+        # 5. Création d'un enregistrement Patient
+        patient = Patient(
+            last_name=last_name,
+            first_name=first_name,
             age=row['age'],
             bmi=row['bmi'],
             children=row['children'],
-            smoker=row['smoker'],
-            sex_id=sex_obj.sex_id,
-            region_id=region_obj.region_id
+            charges=row['charges'],
+            # Optionnel : email du patient si disponible
+            patient_email=None,
+            sex_id=sex_obj.id_sex,
+            region_id=region_obj.id_region,
+            smoker_id=smoker_obj.id_smoker,
+            user_id=None  # À renseigner si le patient a un compte utilisateur associé
         )
-        db.add(utilisateur)
+        db.add(patient)
         db.commit()
-        db.refresh(utilisateur)
+        db.refresh(patient)
         
-        # 5. Création d'un enregistrement Charge
-        charge = Charge(price=row['charges'])
-        db.add(charge)
-        db.commit()
-        db.refresh(charge)
-        
-        # 6. Création d'une Transaction liant l'utilisateur à la charge
-        transaction = Transaction(
-            user_id=utilisateur.user_id,
-            charge_id=charge.charge_id
-        )
-        db.add(transaction)
-        db.commit()
-
     db.close()
     print("Import terminé.")
 

@@ -1,31 +1,32 @@
 from sqlalchemy.orm import Session
+
 from models.sex_model import Sex
 from models.region_model import Region
-from models.utilisateur_model import Utilisateur
-from models.charge_model import Charge
-from models.transaction_model import Transaction
+from models.smoker_model import Smoker
+from models.app_user_model import AppUser
+from models.patient_model import Patient
 
 # ----------------------
 # CRUD pour Sex
 # ----------------------
-def create_sex(db: Session, type: str):
-    new_sex = Sex(type=type)
+def create_sex(db: Session, sex_label: str):
+    new_sex = Sex(sex_label=sex_label)
     db.add(new_sex)
     db.commit()
     db.refresh(new_sex)
     return new_sex
 
 def get_sex(db: Session, sex_id: int):
-    return db.query(Sex).filter(Sex.sex_id == sex_id).first()
+    return db.query(Sex).filter(Sex.id_sex == sex_id).first()
 
 def get_sexes(db: Session):
     return db.query(Sex).all()
 
-def update_sex(db: Session, sex_id: int, type: str):
+def update_sex(db: Session, sex_id: int, sex_label: str):
     sex = get_sex(db, sex_id)
     if not sex:
         return None
-    sex.type = type
+    sex.sex_label = sex_label
     db.commit()
     db.refresh(sex)
     return sex
@@ -50,7 +51,7 @@ def create_region(db: Session, region_name: str):
     return new_region
 
 def get_region(db: Session, region_id: int):
-    return db.query(Region).filter(Region.region_id == region_id).first()
+    return db.query(Region).filter(Region.id_region == region_id).first()
 
 def get_regions(db: Session):
     return db.query(Region).all()
@@ -74,113 +75,132 @@ def delete_region(db: Session, region_id: int):
 
 
 # ----------------------
-# CRUD pour Utilisateur
+# CRUD pour Smoker
 # ----------------------
-def create_utilisateur(db: Session, user_name: str, age: int = None, bmi: float = None, children: int = None, smoker: str = None, sex_id: int = None, region_id: int = None):
-    new_utilisateur = Utilisateur(
-        user_name=user_name,
+def create_smoker(db: Session, is_smoker: str):
+    """
+    is_smoker peut être "yes", "no", ou tout autre label.
+    """
+    new_smoker = Smoker(is_smoker=is_smoker)
+    db.add(new_smoker)
+    db.commit()
+    db.refresh(new_smoker)
+    return new_smoker
+
+def get_smoker(db: Session, smoker_id: int):
+    return db.query(Smoker).filter(Smoker.id_smoker == smoker_id).first()
+
+def get_smokers(db: Session):
+    return db.query(Smoker).all()
+
+def update_smoker(db: Session, smoker_id: int, is_smoker: str):
+    smoker = get_smoker(db, smoker_id)
+    if not smoker:
+        return None
+    smoker.is_smoker = is_smoker
+    db.commit()
+    db.refresh(smoker)
+    return smoker
+
+def delete_smoker(db: Session, smoker_id: int):
+    smoker = get_smoker(db, smoker_id)
+    if smoker:
+        db.delete(smoker)
+        db.commit()
+        return True
+    return False
+
+
+# ----------------------
+# CRUD pour AppUser
+# ----------------------
+def create_app_user(db: Session, username: str, password: str, user_email: str):
+    new_user = AppUser(username=username, password=password, user_email=user_email)
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+    return new_user
+
+def get_app_user(db: Session, user_id: int):
+    return db.query(AppUser).filter(AppUser.id_user == user_id).first()
+
+def get_app_users(db: Session):
+    return db.query(AppUser).all()
+
+def update_app_user(db: Session, user_id: int, **kwargs):
+    user = get_app_user(db, user_id)
+    if not user:
+        return None
+    for key, value in kwargs.items():
+        setattr(user, key, value)
+    db.commit()
+    db.refresh(user)
+    return user
+
+def delete_app_user(db: Session, user_id: int):
+    user = get_app_user(db, user_id)
+    if user:
+        db.delete(user)
+        db.commit()
+        return True
+    return False
+
+
+# ----------------------
+# CRUD pour Patient
+# ----------------------
+def create_patient(
+    db: Session,
+    last_name: str,
+    first_name: str,
+    age: int = None,
+    bmi: float = None,
+    patient_email: str = None,
+    children: int = None,
+    charges: float = None,
+    sex_id: int = None,
+    region_id: int = None,
+    smoker_id: int = None,
+    user_id: int = None
+):
+    new_patient = Patient(
+        last_name=last_name,
+        first_name=first_name,
         age=age,
         bmi=bmi,
+        patient_email=patient_email,
         children=children,
-        smoker=smoker,
+        charges=charges,
         sex_id=sex_id,
-        region_id=region_id
+        region_id=region_id,
+        smoker_id=smoker_id,
+        user_id=user_id
     )
-    db.add(new_utilisateur)
+    db.add(new_patient)
     db.commit()
-    db.refresh(new_utilisateur)
-    return new_utilisateur
+    db.refresh(new_patient)
+    return new_patient
 
-def get_utilisateur(db: Session, user_id: int):
-    return db.query(Utilisateur).filter(Utilisateur.user_id == user_id).first()
+def get_patient(db: Session, patient_id: int):
+    return db.query(Patient).filter(Patient.id_patient == patient_id).first()
 
-def get_utilisateurs(db: Session):
-    return db.query(Utilisateur).all()
+def get_patients(db: Session):
+    return db.query(Patient).all()
 
-def update_utilisateur(db: Session, user_id: int, **kwargs):
-    utilisateur = get_utilisateur(db, user_id)
-    if not utilisateur:
+def update_patient(db: Session, patient_id: int, **kwargs):
+    patient = get_patient(db, patient_id)
+    if not patient:
         return None
     for key, value in kwargs.items():
-        setattr(utilisateur, key, value)
+        setattr(patient, key, value)
     db.commit()
-    db.refresh(utilisateur)
-    return utilisateur
+    db.refresh(patient)
+    return patient
 
-def delete_utilisateur(db: Session, user_id: int):
-    utilisateur = get_utilisateur(db, user_id)
-    if utilisateur:
-        db.delete(utilisateur)
-        db.commit()
-        return True
-    return False
-
-
-# ----------------------
-# CRUD pour Charge
-# ----------------------
-def create_charge(db: Session, price: float):
-    new_charge = Charge(price=price)
-    db.add(new_charge)
-    db.commit()
-    db.refresh(new_charge)
-    return new_charge
-
-def get_charge(db: Session, charge_id: int):
-    return db.query(Charge).filter(Charge.charge_id == charge_id).first()
-
-def get_charges(db: Session):
-    return db.query(Charge).all()
-
-def update_charge(db: Session, charge_id: int, **kwargs):
-    charge = get_charge(db, charge_id)
-    if not charge:
-        return None
-    for key, value in kwargs.items():
-        setattr(charge, key, value)
-    db.commit()
-    db.refresh(charge)
-    return charge
-
-def delete_charge(db: Session, charge_id: int):
-    charge = get_charge(db, charge_id)
-    if charge:
-        db.delete(charge)
-        db.commit()
-        return True
-    return False
-
-
-# ----------------------
-# CRUD pour Transaction
-# ----------------------
-def create_transaction(db: Session, user_id: int, charge_id: int):
-    new_transaction = Transaction(user_id=user_id, charge_id=charge_id)
-    db.add(new_transaction)
-    db.commit()
-    db.refresh(new_transaction)
-    return new_transaction
-
-def get_transaction(db: Session, transaction_id: int):
-    return db.query(Transaction).filter(Transaction.transaction_id == transaction_id).first()
-
-def get_transactions(db: Session):
-    return db.query(Transaction).all()
-
-def update_transaction(db: Session, transaction_id: int, **kwargs):
-    transaction = get_transaction(db, transaction_id)
-    if not transaction:
-        return None
-    for key, value in kwargs.items():
-        setattr(transaction, key, value)
-    db.commit()
-    db.refresh(transaction)
-    return transaction
-
-def delete_transaction(db: Session, transaction_id: int):
-    transaction = get_transaction(db, transaction_id)
-    if transaction:
-        db.delete(transaction)
+def delete_patient(db: Session, patient_id: int):
+    patient = get_patient(db, patient_id)
+    if patient:
+        db.delete(patient)
         db.commit()
         return True
     return False

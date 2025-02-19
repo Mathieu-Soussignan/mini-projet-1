@@ -3,6 +3,5 @@ from models.base import Base
 
 class Sex(Base):
     __tablename__ = "sex"
-
-    sex_id = Column(Integer, primary_key=True, index=True)
-    type = Column(String, nullable=False)
+    id_sex = Column(Integer, primary_key=True, index=True)
+    sex_label = Column(String, nullable=False)
