@@ -73,5 +73,6 @@ def import_insurance_csv(csv_path: str):
     db.close()
     print("Import terminé.")
 
+
 if __name__ == "__main__":
     import_insurance_csv("insurance.csv")
