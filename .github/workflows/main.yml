@@ -29,10 +29,10 @@ jobs:
 
       # Lancement du linter flake8
       - name: Lint with flake8
-        run: |
-          flake8 .
+        run: flake8 .
 
       # Exécution des tests avec pytest
       - name: Test with pytest
-        run: |
-          pytest
+        env:
+          PYTHONPATH: .
+        run: pytest
