@@ -1,0 +1,92 @@
+2025-03-10 15:20:11.212 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:23.504 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:23.694 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:23.909 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:24.137 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:24.411 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:26.508 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:33.367 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:20:34.546 | INFO     | modules.orchestrator:predict_charges:37 - POST predict successful
+2025-03-10 15:20:34.547 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:08.059 | ERROR    | modules.orchestrator:get_patients:16 - Error getting patients: 404 Client Error: Not Found for url: http://localhost:8001/patients/
+2025-03-10 15:23:08.063 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:18.759 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:20.864 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:21.172 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:21.384 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:21.583 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:21.792 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:21.993 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:23.745 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:23.953 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:24.148 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:24.323 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:29.003 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:31.161 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:31.371 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:31.607 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:33.589 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:36.393 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:23:37.304 | INFO     | modules.orchestrator:predict_charges:37 - POST predict successful
+2025-03-10 15:23:37.306 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:27:17.992 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:27:17.992 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:27:19.834 | INFO     | modules.orchestrator:get_utilisateurs:13 - GET utilisateurs successful
+2025-03-10 15:27:19.834 | INFO     | modules.orchestrator:get_utilisateurs:13 - GET utilisateurs successful
+2025-03-10 15:27:22.993 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 15:27:22.993 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:40:36.169 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:40:39.317 | INFO     | modules.orchestrator:get_utilisateurs:13 - GET utilisateurs successful
+2025-03-10 16:40:39.821 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:47.314 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:47.314 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:49.256 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:49.256 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:55.772 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:55.772 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:56.712 | INFO     | modules.orchestrator:predict_charges:37 - POST predict successful
+2025-03-10 16:43:56.712 | INFO     | modules.orchestrator:predict_charges:37 - POST predict successful
+2025-03-10 16:43:56.713 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-10 16:43:56.713 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:44:16.139 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:44:18.552 | INFO     | modules.orchestrator:get_utilisateurs:13 - GET utilisateurs successful
+2025-03-11 09:44:19.343 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:44:30.275 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:44:32.560 | INFO     | modules.orchestrator:predict_charges:37 - POST predict successful
+2025-03-11 09:44:32.561 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:52:09.108 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:52:10.968 | INFO     | modules.orchestrator:get_utilisateurs:13 - GET utilisateurs successful
+2025-03-11 09:52:11.538 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:12:07.343 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:12:08.518 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff997b9bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:12:08.525 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:14:39.656 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:14:41.726 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffaaf78850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:14:41.733 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:14:52.206 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:14:53.644 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffaae71520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:14:53.651 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:19:00.372 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:19:01.626 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='api-proj1', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffa6094700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:19:01.631 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:19:12.017 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:19:13.650 | ERROR    | modules.orchestrator:predict_charges:41 - Error predicting charges: HTTPConnectionPool(host='api-proj2', port=8002): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffa5fc6340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:19:13.652 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:20:17.218 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='api-proj1', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffa6007790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:20:17.224 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:25:42.071 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:25:47.811 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:25:49.450 | ERROR    | modules.orchestrator:get_utilisateurs:16 - Error getting patients: HTTPConnectionPool(host='api-proj1', port=8001): Max retries exceeded with url: /utilisateurs/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffff884d7880>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-03-11 09:25:49.456 | INFO     | __main__:<module>:46 - App Streamlit chargée
+2025-03-11 09:37:49.044 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 09:37:56.534 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 09:37:58.213 | INFO     | modules.orchestrator:get_utilisateurs:14 - GET utilisateurs successful
+2025-03-11 09:37:58.785 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 09:38:08.478 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 09:38:11.201 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 09:38:13.237 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-11 09:38:13.238 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 12:23:40.150 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 12:23:49.830 | INFO     | __main__:<module>:47 - App Streamlit chargée
+2025-03-11 12:23:54.833 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-11 12:23:54.836 | INFO     | __main__:<module>:47 - App Streamlit chargée
