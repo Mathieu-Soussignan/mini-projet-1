@@ -9,7 +9,7 @@ Ce projet a pour objectif d’orchestrer les appels aux APIs des Projets 1 et 2,
 4. [Utilisation](#utilisation)
 5. [Docker Compose](#docker-compose)
 6. [Journalisation](#journalisation)
-7. [Contribuer](#contribuer)
+7. [Contribution](#Contribution)
 
 ---
 
@@ -99,7 +99,7 @@ En cas d’erreur, des messages de niveau ERROR sont également enregistrés, fa
 
 ---
 
-Contribution
+## Contribution
 
 1. Forkez ce dépôt.
 
