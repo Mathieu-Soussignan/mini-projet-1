@@ -2,3 +2,5 @@ streamlit
 requests
 loguru
 pytest
+altair
+pandas
