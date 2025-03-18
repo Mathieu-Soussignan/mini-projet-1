@@ -110,7 +110,7 @@ Pour contribuer :
 
 ## Auteur
 
-- **Mathieu Soussignan** : [Mathieu Soussignan](https://www.mathieu-soussignan.com/)
+- **Mathieu Soussignan** : [Mon site web](https://www.mathieu-soussignan.com/)
 
 ## Licence
 Ce projet est sous licence MIT.
