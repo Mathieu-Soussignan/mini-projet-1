@@ -11,9 +11,10 @@ from routes import (
 from sqlalchemy.orm import DeclarativeMeta
 from modules.database import init_db
 
+
 class AlchemyEncoder(json.JSONEncoder):
     def default(self, obj):
-        # Si l'objet est une instance d'un modèle SQLAlchemy, on le convertit en dict
+        # Si l'objet est une instance d'un modèle SQLAlchemy, dict
         if isinstance(obj.__class__, DeclarativeMeta):
             # On exclut les attributs internes (_sa_instance_state, etc.)
             fields = {}

@@ -5,6 +5,7 @@ from models.patient_model import Patient
 
 router = APIRouter()
 
+
 @router.post("/")
 def create_patient(
     last_name: str,
@@ -22,7 +23,7 @@ def create_patient(
 ):
     # Vérification minimale : sex_id, region_id et smoker_id sont obligatoires
     if sex_id is None or region_id is None or smoker_id is None:
-        raise HTTPException(status_code=400, detail="sex_id, region_id and smoker_id are required")
+        raise HTTPException(status_code=400, detail="sex_id, region_id and smoker_id are required") # noqa
     new_patient = Patient(
         last_name=last_name,
         first_name=first_name,
@@ -41,17 +42,20 @@ def create_patient(
     db.refresh(new_patient)
     return new_patient
 
+
 @router.get("/")
 def read_patients(db: Session = Depends(get_db)):
     patients = db.query(Patient).all()
     return patients
 
+
 @router.get("/{patient_id}")
 def read_patient(patient_id: int, db: Session = Depends(get_db)):
-    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first()
+    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first() # noqa
     if not patient:
         raise HTTPException(status_code=404, detail="Patient not found")
     return patient
+
 
 @router.put("/{patient_id}")
 def update_patient(
@@ -69,7 +73,7 @@ def update_patient(
     user_id: int = None,
     db: Session = Depends(get_db)
 ):
-    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first()
+    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first() # noqa: E501, E261
     if not patient:
         raise HTTPException(status_code=404, detail="Patient not found")
     if last_name is not None:
@@ -98,11 +102,12 @@ def update_patient(
     db.refresh(patient)
     return patient
 
+
 @router.delete("/{patient_id}")
 def delete_patient(patient_id: int, db: Session = Depends(get_db)):
-    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first()
+    patient = db.query(Patient).filter(Patient.id_patient == patient_id).first() # noqa
     if not patient:
         raise HTTPException(status_code=404, detail="Patient not found")
     db.delete(patient)
     db.commit()
-    return {"detail": "Patient deleted successfully"}
+    return {"detail": "Patient deleted successfully"} # noqa

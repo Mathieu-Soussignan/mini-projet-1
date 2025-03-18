@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mathieu/Documents/Alternance_IA/Projet_groupe/mini-projet-1/Projet-2/scripts/mlruns/0/08d3912de7cc4a03ae1c8401df8fc697/artifacts
+end_time: 1742206050310
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 08d3912de7cc4a03ae1c8401df8fc697
+run_name: LinearRegression
+run_uuid: 08d3912de7cc4a03ae1c8401df8fc697
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742206047144
+status: 3
+tags: []
+user_id: mathieu

@@ -116,3 +116,105 @@
 2025-03-12 10:49:03.921 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
 2025-03-12 10:49:03.934 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
 2025-03-12 10:49:03.988 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:00.886 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:08.192 | INFO     | modules.orchestrator:get_utilisateurs:14 - GET utilisateurs successful
+2025-03-13 12:34:08.207 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:16.516 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:18.199 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:20.676 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:21.107 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:21.515 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:25.413 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:28.125 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:28.128 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:36.693 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:38.901 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:38.919 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:38.945 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:38.965 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:38.984 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:38.999 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:39.013 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:39.028 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:34:39.065 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:34:54.550 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:36:57.456 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:37:19.901 | INFO     | modules.orchestrator:get_utilisateurs:14 - GET utilisateurs successful
+2025-03-13 12:37:19.923 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:37.806 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:40.019 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:40.490 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:54.425 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:55.397 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:56.043 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:57.085 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:38:57.538 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:00.273 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:03.093 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:06.230 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:10.270 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:12.652 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:39:12.655 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:33.208 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:34.938 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:39:34.940 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:43.634 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:47.169 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:47.925 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:48.863 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:39:49.620 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:39:49.622 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:40:10.188 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-13 12:40:16.748 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.763 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.774 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.800 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.816 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.830 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.843 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.858 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-13 12:40:16.871 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:39:06.010 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:39:39.511 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:39:52.133 | INFO     | modules.orchestrator:get_utilisateurs:14 - GET utilisateurs successful
+2025-03-17 09:39:52.232 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:17.942 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:30.206 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:30.616 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:33.352 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:37.005 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:40:37.009 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:40:56.756 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:41:06.804 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:06.830 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:06.929 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.003 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.037 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.068 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.096 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.127 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-17 09:41:07.244 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-17 09:41:16.629 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:40:35.254 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:40:49.651 | INFO     | modules.orchestrator:get_utilisateurs:14 - GET utilisateurs successful
+2025-03-18 09:40:49.731 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:20.051 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:23.720 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:26.302 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:26.535 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:28.029 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:29.254 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:41:29.256 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:54.688 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:41:55.701 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:41:55.703 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:42:15.440 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée
+2025-03-18 09:42:20.903 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:20.927 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:20.965 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:20.994 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:21.009 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:21.026 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:21.043 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:21.060 | INFO     | modules.orchestrator:predict_charges:40 - POST predict successful
+2025-03-18 09:42:21.162 | INFO     | __main__:<module>:137 - App Streamlit (version avancée) chargée

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mathieu/Documents/Alternance_IA/Projet_groupe/mini-projet-1/Projet-2/scripts/mlruns/0/8181a9aba19a4b2187e1de361b350134/artifacts
+end_time: 1742206053306
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8181a9aba19a4b2187e1de361b350134
+run_name: RandomForest
+run_uuid: 8181a9aba19a4b2187e1de361b350134
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742206050313
+status: 3
+tags: []
+user_id: mathieu

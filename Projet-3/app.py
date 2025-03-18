@@ -74,7 +74,7 @@ st.header("3. Prédictions en masse (import d'un fichier CSV)")
 """
 **Format attendu du CSV :**  
 Les colonnes suivantes doivent être présentes :  
-`age`, `bmi`, `children`, `sex`, `smoker`, `region`  
+`age`, `bmi`, `children`, `sex`, `smoker`, `region`  # noqa
 """
 
 uploaded_file = st.file_uploader("Importer un fichier CSV pour faire des prédictions en masse", type=["csv"]) # noqa
